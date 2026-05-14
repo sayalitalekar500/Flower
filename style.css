@@ -1,0 +1,219 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #fff8f9;
+    color: #333;
+}
+
+/* HEADER */
+header{
+    background: #ff69b4;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ffe4e1;
+}
+
+/* HERO */
+.hero{
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1520763185298-1b434c919102?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content{
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero-content h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.btn{
+    background: #ff1493;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background: #c71585;
+}
+
+/* FLOWERS */
+.flowers{
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.flowers h2{
+    font-size: 40px;
+    color: #d63384;
+    margin-bottom: 40px;
+}
+
+.flower-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.flower-card{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.flower-card:hover{
+    transform: translateY(-10px);
+}
+
+.flower-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.flower-card h3{
+    margin: 15px 0;
+    color: #d63384;
+}
+
+.flower-card p{
+    padding: 0 15px 20px;
+}
+
+/* ABOUT */
+.about{
+    background: #ffe4ec;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.about h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #c2185b;
+}
+
+.about p{
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* CONTACT */
+.contact{
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #d63384;
+}
+
+form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button{
+    background: #ff1493;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #c71585;
+}
+
+/* FOOTER */
+footer{
+    background: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1{
+        font-size: 40px;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+}
